@@ -1,0 +1,383 @@
+<!doctype html>
+<html>
+	<head>
+		<title>WeInspire - Home</title>
+		<link rel="icon" href="/logo.png">
+			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+			<style type="text/css">
+				/*on mobile*/
+		@media screen and (max-width: 700px) {
+			#show{display:block}
+			#noshow{display:none}
+			#compnav {display:none;}
+			#mobnav {display:block;}
+			.info {
+			display:block;
+			margin:auto;
+			width:100%;
+			backgound-color: white;
+			border:10px solid #ffffff;
+			border-radius:15px;
+			}
+			.infox{
+			margin: 80px 12px 10px 12px;
+			display:inline-block;
+			width: 100%;
+			height:250px;
+			overflow:hidden;
+			
+			}
+			.imginfo{
+			background-color: white;
+			display:inline-block;
+			opacity:0.5;
+			margin: 80px 12px 10px 12px;
+			color:#777777;
+			}
+			.imginfo:hover{
+		
+			opacity:1;
+			margin: 80px 12px 10px 12px;
+	 		height: auto;
+	 		box-shadow: 0 1px 0.5px grey;
+	 		color:#777777;
+			transition:2s;
+			}
+			.brief{
+			height:200px;
+			opacity:0.5;
+			color:#777777;
+			background:linear-gradient(90deg,white,#0080ff);
+			padding:10px 20px 0 5px;
+	
+			
+			}
+			.brief:hover{
+			height:200px;
+			opacity:1;
+			color:#777777;
+			transition: 2s;
+			}
+				.brief2{
+			height:200px;
+			opacity:0.5;
+			color:#777777;
+			background:linear-gradient(90deg,#0080ff, white);
+			padding:10px 20px 0 5px;
+			margin-top:10px;
+			}
+			.brief2:hover{
+			height:200px;
+			opacity:1;
+			color:#777777;
+			transition: 2s;
+			}		
+			.brief3{
+			height:auto;
+			color:#fffff;
+			background:white;
+			padding:10px 20px 0 5px;
+			margin-top:10px;
+			text-align: center;
+			}
+			#team{display:inline-block; width:40%; margin:0 0 0 16px}
+			#sociallinks{display:inline-block; width:40%; float:right}
+			.teamer{height:1px;}
+			.teamer:hover{height:10px}
+				body {
+			background: linear-gradient(#ffffff, #cceeff);
+			font-family: Garamond, arial, Georgia, serif;
+			}
+			
+			.sidenav {
+			float:middle;
+			height: 10%;
+			width: 0;
+			position: fixed;
+			z-index: 1;
+			top: 0;
+			left: 0;
+			background-color: #111;
+			background: linear-gradient(90deg, white, #668cff);
+			overflow-x: hidden;
+			transition: 0.5s;
+			padding-top: 20px;
+			padding-buttom: 3px;
+			float: left;
+			text-align:center;
+			}
+			
+			.sidenav a {
+			float:none;
+			padding: 2px 8px 0px 8px;
+			text-decoration: none;
+			font-size: 15px;
+			font-family:garamond;
+			color: #818181;
+			display: inline-block;
+			transition: 0.3s;
+			}
+			
+			.sidenav a:hover {
+			color: black;
+			border: 0 0 1px 0 solid black;
+			transition:2s;
+			}
+			
+			.sidenav .closebtn {
+			position: absolute;
+			top: 0;
+			right: 25px;
+			font-size: 36px;
+			margin-left: 50px;
+			}
+			
+			
+			ul {
+			color:black;
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			background-color: #333;
+			background: linear-gradient(90deg, white, #668cff);
+			
+			}
+			
+			li {
+			float: right;
+			font-size: 15px;
+			}
+			
+			li a {
+			display: block;
+			color: black;
+			text-align: center;
+			padding: 5px 5px;
+			text-decoration: none;
+			border-bottom:3px solid white;
+			border-radius:9px;
+			margin: 10px 2px 10px 2px;
+			}
+			
+			li a:hover {
+			text-decoration: none;
+			background-color: none;
+			color: #777777;
+			transition: 1s;
+			border-bottom:3px solid black;
+			}
+			
+			li a:visited {
+			background-color: #4CAF50;}
+			
+			li a:active {
+			background-color: #4CAF50;
+			}
+			
+			header{height: 500px;
+							background: url("/h6.jpg") no-repeat center;
+							
+							padding: 50px 0 0 0 ;
+							color:white;
+							
+							
+			}
+			footer{text-align:center;
+			width:100%;
+			background:#668cff;
+			color: white
+			}
+			.ptime {
+  text-align: center;
+  font-size: 47px;
+  margin-top: 0px;
+  color: #777777
+}
+		.ptime2 {
+  text-align: center;
+  font-size: 20px;
+  font-family: garamond;
+  margin-top: 0px;
+  color: black;
+  background: linear-gradient(90deg,#cce0ff 2%, white 90%)
+}
+		
+			h1, h2, h3, h4, h5, h6{
+			color: #555555;
+			font-family: garamond;
+			}
+
+			}
+			/*tabs and computers*/
+	  @media screen and (min-width: 701px) {
+			#show{display:none}
+			#noshow{display:block}
+			#compnav {display:inline-block;}
+			#mobnav {display:none;}
+			header{background-width:100%;}
+			}
+		
+			</style>
+			</head>
+	<body id="show">
+
+<!--start side menu-->
+  <nav>
+ <ul>
+ 	<div id="mySidenav" class="sidenav">
+ 		  <a href="javascript:void(0)" onclick="closeNav()"><span style="color:red">← close</span></a>
+  <a href="#">Home</a><a href="#about">About us</a>
+  <a href="#team">The Team</a>
+  <a href="#contact">Contact</a>
+  <a href="#events"> Events</a>
+</div>
+ <span id="mobnav" style="font-family: garamond; font-size:20px;cursor:pointer; float:right; color:white" onclick="openNav()">&#9778; menu</span>
+<div id="compnav"> 
+  <li><a href="#">Home</a></li>
+  <li><a href="#about">About us</a></li>
+  <li><a href="#team">The Team</a></li>
+  <li><a href="#events">Events</a></li>
+  <li><a href="#contact">Contact</a></li>
+</div>
+</ul>
+</nav>
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "100%";
+    document.getElementById("main").style.marginLeft = "";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+	<header id="header" style="transition: 2s;">
+		<center>
+		 <img height="100" src="/logo.png" align="center">
+		 	<h1 style="margin:50px; color:white"> WeInspire </h1>
+		 <p><i> ...redefining you. </i></p>
+		 
+		 </center>
+	 </header>
+	
+	<main id="main">
+		<div class="ptime2"><h4>Announcement:</h4> It's <b><span id="timer2"></span>days</b> to our <span style="color:red;">Customer Insight 1.0</span>?<br><a href="#events">LEARN MORE</a></div>
+		<div id="about" class="info">
+			<div class="infox imginfo">
+		<center>			
+			<h2> About us</h2>
+				<img src="/header.jpg" alt="logo" align="center" height="200"/> </center><p> We are a learning organization and providers for professional training services focused on improving clients' skills in customer centricity. 
+Our company is based in Benin City, and currently serves businesses, NGOs and individuals in the south-south region.
+<br><br>
+Our services are focused on helping people to recognize, as well as maximize their skills and abilities, build on and apply them to their everyday lives and businesses.</p></div> 
+
+<div class="brief">
+	<img class="" src="/vision.png" align="right" height="200px"> 
+	<h4 style="color:#0080ff; font-size:40px"><b>Our<br>Vision</b></h4>
+<p style="margin:0 20px 0 50px;">...to support clients in improving their customers' experience... </p></div>
+			<div class="brief2">
+			<img class="" src="/mission.png" align="left" height="200px">  	<h4 style="color:#0080ff; font-size:40px; text-align:right"><b>Our<br> Mission</b></h4><p style="margin:0 20px 0 50px;">...to provide training for clients to successfully increase sales and continuously serve, keep and attract more customers...</p></div>
+		
+		</div>
+		<!--Gallery-->
+
+	 	<!--Gallery slideshow ends here--> 
+	 	<!--upcoming events-->
+	 	<div class="brief3" id="events">
+	 	<h2 style="width:100%; background-color:#668cff; height: auto; color:white"> Upcoming events </h2>
+	 	<hr style="width:40%; color:black; height: 10px">
+	 	<h1> WeInspire </h1> <hr style="width:20%; color:black; height: auto; font-family: time"><h3> <i>Presents</i> </h3>
+	 	<img class="" src="/august_event.jpg" align="right" width="100%"> <h5>Countdown:</h5>
+	 	<p class="ptime" id="timer"></p>
+	 	<script>
+// Set the date we're counting down to
+var countDownDate = new Date("aug 1, 2019 00:00:25").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get todays date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result 
+  document.getElementById("timer").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+  document.getElementById("timer2").innerHTML = days + " ";
+    
+  // If the count down is over 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("timer").innerHTML = "Sorry... This event has passed...";
+  }
+}, 1000);
+</script>
+	 	</div>
+    </main>
+
+
+<!-- Contact -->
+<div id="contact">
+	<div id="team">
+		<h3> WeInspire Team</h3>
+		<p class="teamer">
+		<h4> Manager </h4>
+Chuks Ikeji<br>
+B.Eng Gas Engineering, MBA<br>
+Ikejichuks@gmail.com<br>
+07036709779<br></p>
+
+<p class="teamer">
+			<h4> Consultant </h4>
+Ayele Patience<br>
+B.Sc Biochemistry<br>
+
+Agbebohpatience@gmail.com<br>
+09060468798<br></p>
+
+<p class="teamer">
+	<h4> Logistics Manager.</h4>
+Musa Sumaina<br>
+BSc Statistics Computer Science.<br>
+
+07036727756<br></p>
+
+<p class="teamer">
+	<h4>Brand Manager </h4>
+Afe Inegbedion<br>
+MSc Information Systems Management<br>
+
+afe.inegbedion@gmail.com<br></p>
+  </div>
+  
+  <div id="sociallinks">
+  	<h4>Contact Info</h4>
+	<p> <a href="mailto:info@weinspire.com.ng" target="_blank"> <img src="https://img.icons8.com/material-rounded/30/000000/mail.png">info@weinspire.com.ng</a></p>
+	<p> <a href="https://fb.com/weinspireng" target="_blank"> <img src="https://img.icons8.com/material-rounded/30/000000/facebook-circled.png">/weinspireng</a></p>
+	<p>  <a href="https://twitter.com/weinspire_ng" target="_blank"> <img src="https://img.icons8.com/material-rounded/30/000000/twitter.png">@weinspire_ng</a></p>
+	<p>  <a href="https://instagram.com/weinspireng" target="_blank"> <img src="https://img.icons8.com/material-rounded/30/000000/instagram.png">@weinspireng</a></p>
+	</div>
+</div>
+		<footer style="padding:-40px 0 0 0"> 
+	
+		 <img height="50" src="/logo.png" align="center" ><br> This website, its content, logos and images are properties of the above named company. Copyright 2019 by WeInspire, Nigeria. All Rights Reserved.<br> <span style="color:white; font-size:20px"> &#9786;</span><span style="color:#777770; font-size:15px">  Powered by Okorokporo David</span> </footer>
+	</body>
+	<div id="noshow">
+		<h1>Oops!!! Not yet available on tabs and computers... view on your mobile device...</h1>
+		<div>
+</html>
